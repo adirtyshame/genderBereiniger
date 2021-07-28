@@ -1,0 +1,12 @@
+{
+  "name": "GenderBereiniger",
+  "description": "Drop *innen, :innen, Innen and so on for a better reading experience",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {"matches": ["*://*/*"], "all_frames": true, "js": ["doit.js"], "run_at": "document_end"}
+  ],
+  "icons": {
+    "32": "/images/male32.png"
+  }
+}
